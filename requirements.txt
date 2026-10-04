@@ -1,0 +1,15 @@
+# windows-computer-use 依赖清单
+# ==============================
+# 安装：pip install -r requirements.txt
+#
+# 只有 4 个必需包，都是公开的 PyPI 包，无私有依赖。
+
+# ── 必需 ──
+pywin32>=306          # Win32 API（窗口 / 键鼠底层）
+pillow>=10.0.0        # 截图与图像处理
+numpy>=1.24.0         # 模板匹配的数组运算
+uiautomation>=2.0.18  # UI Automation（读无障碍树 —— 定位层）
+
+# ── 可选（不装只影响对应功能，其余照常）──
+# rapidocr-onnxruntime>=1.3.0   # OCR 找文字；不装则 find_text / read_text 不可用
+# comtypes>=1.2.0               # uiautomation 某些场景需要；通常随它自动装上
